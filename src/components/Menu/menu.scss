@@ -1,0 +1,32 @@
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+}
+
+.menu { 
+    // display: flex;
+    margin: 0 auto;
+    width: 575px;
+    height: 550px;
+    background-color: red;
+}
+
+.menu-row { 
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: green;
+}
+
+.menu-left { 
+    width: 15%;
+    background-color: purple;
+}
+
+.menu-right{ 
+    width: 85%;
+    background-color: yellow;
+}
