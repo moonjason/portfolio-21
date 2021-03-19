@@ -3,6 +3,7 @@ import './menu.scss'
 
 function Menu() {
   let [ over, setOver ] = useState({ over: false, color: ''});
+  let [ listAnimate, setListAnimate ] = useState('slide-right');
 
     const content = ['About', 'Projects', 'Resume', 'Contact']
     
@@ -11,29 +12,39 @@ function Menu() {
     }
 
     function setContent() {
-      return content.map((section, i) =>  
-        <li key={`menu-${i}`}><span onMouseOut={(e)=> handleEvent(e)} onMouseOver={(e)=> handleEvent(e)}>{section}</span></li>
-      )
+      let delay = 0.1
+      return content.map((section, i) => {
+        let style = { 
+          animationDelay: `${delay}s`
+        }
+        delay += 0.115
+        return <li className={listAnimate} style={style} key={`menu-${i}`}><span onClick={e => handleEvent(e)} onMouseOut={(e)=> handleEvent(e)} onMouseOver={(e)=> handleEvent(e)}>{section}</span></li>
+      })
     }
 
     const handleEvent = (e) => {
       if (e.type === 'mouseover') {
         switch(e.target.textContent) { 
           case "About":
-            setOver({over: true, color: 'red'})
+            setOver({over: true, color: '#DFF0EA'})
             break;
           case "Projects":
-            setOver({over: true, color: 'teal'})
+            setOver({over: true, color: '#95ADBE'})
             break;
           case "Resume":
-            setOver({over: true, color: 'yellow'})
+            setOver({over: true, color: '#574F7D'})
             break;
           default:
-            setOver({over: true, color: 'limegreen'})  
+            setOver({over: true, color: '#4F3A65'})  
         }
       } else { 
         setOver({over: false, color: 'white'})  
       }
+
+      if ( e.type === 'click') {
+        setListAnimate('slide-left')
+      } 
+
     }
 
     return (
