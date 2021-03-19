@@ -2,7 +2,7 @@ import { Route, Switch } from 'react-router-dom';
 //components
 // import Header from './components/Header/Header';
 // import Nav from './components/Nav/Nav';
-// import Home from './components/Home/Home';
+import About from './components/About/About';
 import Menu from './components/Menu/Menu';
 
 function App() {
@@ -10,9 +10,9 @@ function App() {
   return (
     <div className="App">
       <Switch>
-        {/* <Route/ > */}
+        <Route exact path={'/menu'} render={() => <Menu />} />
+        <Route exact path={['/', '/about']} render={() => <About />} />
       </Switch>
-      <Menu/>
     </div>
   );
 } 

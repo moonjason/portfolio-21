@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './menu.scss'
 
 function Menu() {
@@ -18,7 +19,27 @@ function Menu() {
           animationDelay: `${delay}s`
         }
         delay += 0.115
-        return <li className={listAnimate} style={style} key={`menu-${i}`}><span onClick={e => handleEvent(e)} onMouseOut={(e)=> handleEvent(e)} onMouseOver={(e)=> handleEvent(e)}>{section}</span></li>
+
+        let route;
+        switch(section) {
+          case "About":
+            route = '/about'
+            break;
+          case "Projects":
+            route = '/projects'
+            break;
+          case "Resume":
+            route = '/#'
+            break;
+          default:
+            route = '/contact'
+        }
+
+        return  <li className={listAnimate} style={style} key={`menu-${i}`}>
+                  <Link to={route} style={{ color: 'inherit', textDecoration: 'inherit'}}>
+                    <span onClick={e => handleEvent(e)} onMouseOut={(e)=> handleEvent(e)} onMouseOver={(e)=> handleEvent(e)}>{section}</span>
+                  </Link> 
+                </li>
       })
     }
 
