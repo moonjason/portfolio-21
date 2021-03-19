@@ -6,6 +6,7 @@ import { Route, Switch } from 'react-router-dom';
 import Menu from './components/Menu/Menu';
 
 function App() {
+
   return (
     <div className="App">
       <Switch>
@@ -14,6 +15,6 @@ function App() {
       <Menu/>
     </div>
   );
-}
+} 
 
 export default App;
