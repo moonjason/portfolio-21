@@ -15,7 +15,7 @@ function App() {
     <div className="App">
       <Route render={({location}) => (
         <TransitionGroup>
-          <CSSTransition key={location.key} timeout={1500}>
+          <CSSTransition key={location.key} timeout={50}>
               <Switch location={location}>git 
                 <Route exact path={'/menu'} render={() => <Menu />} />
                 <Route exact path={['/', '/about']} render={() => <About />} />

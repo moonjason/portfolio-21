@@ -1,3 +1,26 @@
-.page { 
-    position: absolute;
+.page {
+  position: absolute;
 }
+
+@font-face {
+  font-family: "DM Sans", sans-serif;
+  src: url(./fonts/DMSans/DMSans-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 900;
+  src:  url(./fonts/DMSans/DMSans-Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 900;
+  src: url(./fonts/DMSans/DMSans-Medium.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 900;
+    src: url(./fonts/DMSans/DMSans-BoldItalic.ttf) format("truetype");
+  }
