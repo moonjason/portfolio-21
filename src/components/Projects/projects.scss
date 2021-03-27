@@ -12,7 +12,52 @@ input {
     align-items: center;
 }
 
+.accordion { 
+    width: 70%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
 .tab-label { 
     font-family: 'DM Sans', sans-serif;
     font-weight: bold;
+    font-size: 38px;
 }
+
+.tab {
+    width: 100%;
+    &-content {
+        max-height: 0;
+        padding: 0 1em;
+        color: blue;
+        background: white;
+        transition: all .35s;
+    }
+    // color: white;
+    // overflow: hidden;
+}
+
+.tab-content {
+        // visibility: hidden;
+        display: none;
+        max-height: 0;
+        padding: 0 1em;
+        color: black;
+        background: white;
+        transition: all .35s;
+      
+}
+
+input:checked {
+    + .tab-label {
+        color: pink;
+    }
+    ~ .tab-content  {
+        display:block;
+        max-height: 100vh;
+        padding: 1em;
+    }
+
+  }
+  
