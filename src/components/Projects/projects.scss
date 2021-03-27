@@ -1,0 +1,18 @@
+input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+  }
+
+.container { 
+    width: 100vw;
+    min-height: 100vh;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.tab-label { 
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bold;
+}

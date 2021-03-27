@@ -36,7 +36,7 @@ function Menu() {
         }
 
         return  <li className={listAnimate} style={style} key={`menu-${i}`}>
-                  <Link to={route} style={{ color: 'inherit', textDecoration: 'inherit'}}>
+                  <Link className="link"to={route} style={{ color: 'inherit', textDecoration: 'inherit'}}>
                     <span onClick={e => handleEvent(e)} onMouseOut={(e)=> handleEvent(e)} onMouseOver={(e)=> handleEvent(e)}>{section}</span>
                   </Link> 
                 </li>

@@ -8,6 +8,7 @@ import './App.scss';
 //components
 import About from './components/About/About';
 import Menu from './components/Menu/Menu';
+import Projects from './components/Projects/Projects';
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
               <Switch location={location}>git 
                 <Route exact path={'/menu'} render={() => <Menu />} />
                 <Route exact path={['/', '/about']} render={() => <About />} />
+                <Route exact path={['/projects']} render={() => <Projects />} />
               </Switch>
           </CSSTransition>
         </TransitionGroup>

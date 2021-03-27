@@ -1,10 +1,10 @@
 import './About.scss'
-import { useState } from 'react'
+// import { useState } from 'react'
 import { useHistory } from "react-router-dom";
 
 function About() {
-    let [scroll, setScroll] = useState(0)
-    let [scrolled, setScrolled] = useState(false)
+    // let [scroll, setScroll] = useState(0)
+    // let [scrolled, setScrolled] = useState(false)
 
     const history = useHistory();
 
@@ -38,7 +38,7 @@ function About() {
                 I'm Jason, a software engineer, food lover, and unprofessional golfer. I started programming in 2019 out of curiosity and since then, I was able to be apart of really cool projects and pick up several technologies on the way. Javascript is my primary language and I have experience developing with Node, Express, Firebase, GCP, AWS to name a few.
                 <br/>
                 <br/>
-                Thanks for visiting the site. Please check out my projects and resume by scrolling or clicking on "explore". 
+                Thanks for visiting the site. Please check out my projects and resume by clicking on "explore". 
                 <br/>
                 <br/>
               </div>
@@ -46,7 +46,7 @@ function About() {
           </div>
           <div className="explore fade-in-btn">
             <button className="explore__btn fill" onClick={e => handleClick(e)}>
-              Explore
+              explore
             </button>
           </div>
         </div>
