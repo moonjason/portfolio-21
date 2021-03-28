@@ -2,7 +2,7 @@ input {
     position: absolute;
     opacity: 0;
     z-index: -1;
-  }
+}
 
 .container { 
     width: 100vw;
@@ -23,38 +23,32 @@ input {
     font-family: 'DM Sans', sans-serif;
     font-weight: bold;
     font-size: 38px;
+    cursor: pointer;
+    -webkit-text-stroke: 1px black;
+    color: white;
 }
 
 .tab {
     width: 100%;
+    overflow: hidden;
     &-content {
+        opacity: 0;
         max-height: 0;
         padding: 0 1em;
         color: blue;
         background: white;
-        transition: all .35s;
+        transition: all ease-in-out .6s;
     }
-    // color: white;
-    // overflow: hidden;
 }
 
-.tab-content {
-        // visibility: hidden;
-        display: none;
-        max-height: 0;
-        padding: 0 1em;
-        color: black;
-        background: white;
-        transition: all .35s;
-      
-}
 
 input:checked {
     + .tab-label {
         color: pink;
     }
     ~ .tab-content  {
-        display:block;
+        opacity: 100%;
+        display: block;
         max-height: 100vh;
         padding: 1em;
     }
