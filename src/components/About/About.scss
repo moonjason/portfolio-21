@@ -2,7 +2,7 @@
     font-family: 'DM Sans', sans-serif;
   transition: all 350ms ease-out;
   width: 100vw;
-  min-height: 100vh;
+  min-height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -91,12 +91,11 @@ img {
 
 .about-bg {
   width: 100vw;
-  min-height: 100vh;
+  height: 80vh;
   background-color: #dff0ea;
-
   position: absolute;
   z-index: -1;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 30%, 100% 15%, 100% 83%, 0 97%);
 }
 
 .bg--animate {
@@ -107,19 +106,19 @@ img {
 
 @-webkit-keyframes bg-animate {
   0% {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    // clip-path: polygon(0 20%, 100% 20%, 70% 70%, 0 100%);
   }
   100% {
-    clip-path: polygon(0 39%, 100% 21%, 100% 73%, 0 91%);
+    clip-path: polygon(0 30%, 100% 15%, 100% 83%, 0 97%);
   }
 }
 
 @keyframes bg-animate {
   0% {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    // clip-path: polygon(0 20%, 100% 20%, 70% 70%, 0 100%);
   }
   100% {
-    clip-path: polygon(0 39%, 100% 21%, 100% 73%, 0 91%);
+    clip-path: polygon(0 30%, 100% 15%, 100% 83%, 0 97%);
   }
 }
 

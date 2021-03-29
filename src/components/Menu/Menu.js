@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './menu.scss'
 
 function Menu() {
   let [ over, setOver ] = useState({ over: false, color: ''});
-
+  let [ current, setCurrent] = useState('About')
     const content = ['About', 'Projects', 'Resume', 'Contact']
     
     let bgStyle = {
@@ -28,17 +28,19 @@ function Menu() {
             route = '/projects'
             break;
           case "Resume":
-            route = '/#'
+            route = '/resume'
             break;
           default:
             route = '/contact'
         }
-
-        return  <li className="nav-fill" style={style} key={`menu-${i}`}>
-                  <Link className="link"to={route} style={{ color: 'inherit', textDecoration: 'inherit'}}>
-                    <span onClick={e => handleEvent(e)} onMouseOut={(e)=> handleEvent(e)} onMouseOver={(e)=> handleEvent(e)}>{section}</span>
-                  </Link> 
-                </li>
+        return <NavLink activeClassName="nav-filled" className="link nav-fill"to={route} style={{ textDecoration: 'inherit'}}>
+                  <span onClick={e => handleEvent(e)} onMouseOut={(e)=> handleEvent(e)} onMouseOver={(e)=> handleEvent(e)}>{section}</span>
+                </NavLink> 
+        // return  <li className="nav-fill" style={style} key={`menu-${i}`}>
+        //           <NavLink activeStyle="" className="link nav-fill"to={route} style={{ color: 'inherit', textDecoration: 'inherit'}}>
+        //             <span onClick={e => handleEvent(e)} onMouseOut={(e)=> handleEvent(e)} onMouseOver={(e)=> handleEvent(e)}>{section}</span>
+        //           </NavLink> 
+        //         </li>
       })
     }
 

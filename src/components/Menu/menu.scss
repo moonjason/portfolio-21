@@ -79,6 +79,7 @@ li {
     background: none;
     padding: 3px 7px 3px 7px;
     position: relative;
+    color: black;
     &:before { 
         content: "";
         background: black;
@@ -100,6 +101,20 @@ li {
     }
 }
 
+.nav-filled {
+    &:before { 
+        content: "";
+        background: black;
+        clip-path: polygon(11% 16%, 100% 16%, 93% 87%, 2% 87%);
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+    color: white;
+}
 
 @-webkit-keyframes nav-animate {
     0% {

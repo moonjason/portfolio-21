@@ -43,11 +43,11 @@ function About() {
               </div>
             </div>
           </div>
-          <div className="explore fade-in-btn">
+          {/* <div className="explore fade-in-btn">
             <button className="explore__btn fill" onClick={e => handleClick(e)}>
               explore
             </button>
-          </div>
+          </div> */}
         </div>
     );
   } 
