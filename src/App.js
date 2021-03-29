@@ -14,11 +14,11 @@ function App() {
 
   return (
     <div className="App">
+      <Menu />
       <Route render={({location}) => (
         <TransitionGroup>
           <CSSTransition key={location.key} timeout={50}>
               <Switch location={location}>git 
-                <Route exact path={'/menu'} render={() => <Menu />} />
                 <Route exact path={['/', '/about']} render={() => <About />} />
                 <Route exact path={['/projects']} render={() => <Projects />} />
               </Switch>

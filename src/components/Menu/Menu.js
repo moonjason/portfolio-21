@@ -4,7 +4,6 @@ import './menu.scss'
 
 function Menu() {
   let [ over, setOver ] = useState({ over: false, color: ''});
-  let [ listAnimate, setListAnimate ] = useState('slide-right');
 
     const content = ['About', 'Projects', 'Resume', 'Contact']
     
@@ -35,7 +34,7 @@ function Menu() {
             route = '/contact'
         }
 
-        return  <li className={listAnimate} style={style} key={`menu-${i}`}>
+        return  <li className="nav-fill" style={style} key={`menu-${i}`}>
                   <Link className="link"to={route} style={{ color: 'inherit', textDecoration: 'inherit'}}>
                     <span onClick={e => handleEvent(e)} onMouseOut={(e)=> handleEvent(e)} onMouseOver={(e)=> handleEvent(e)}>{section}</span>
                   </Link> 
@@ -61,16 +60,13 @@ function Menu() {
       } else { 
         setOver({over: false, color: 'white'})  
       }
-
-      if ( e.type === 'click') {
-        setListAnimate('slide-left')
-      } 
-
+      
     }
 
     return (
-      <div className="menu-container" style={bgStyle}>
-        <ul className="menu">
+      <div className="nav-container">
+        <h1 className="header slide-top">Jason Moon // Software Dev</h1>
+        <ul className="nav-list">
           {setContent()}
         </ul>
       </div>

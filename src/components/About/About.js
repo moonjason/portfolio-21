@@ -1,6 +1,6 @@
 import './About.scss'
 // import { useState } from 'react'
-import { useHistory } from "react-router-dom";
+import { useHistory, Link } from "react-router-dom";
 
 function About() {
     // let [scroll, setScroll] = useState(0)
@@ -26,7 +26,6 @@ function About() {
     return (
       <div className="about-container" onWheel={e => handleWheel(e)}>
           <div className="about-bg bg--animate"></div>
-          <h1 className="header slide-top">Jason Moon // Software Dev</h1>
           <div className="about fade-in"> 
             <div className="column">
               <div className="photo">
