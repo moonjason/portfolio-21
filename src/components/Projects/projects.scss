@@ -6,7 +6,7 @@ input {
 
 .container { 
     width: 100vw;
-    min-height: 100vh;
+    min-height: 50vh;
     display: flex; 
     justify-content: center;
     align-items: center;
@@ -20,14 +20,35 @@ input {
 }
 
 .tab-label { 
+    transition: all .5s;
     font-family: 'DM Sans', sans-serif;
     font-weight: bold;
-    font-size: 38px;
+    font-size: 44px;
     cursor: pointer;
     color: black;
-    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+    -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
+    background-clip: text;
+    -webkit-background-clip: text;
+    overflow: hidden;
+    position: relative;
+    &::before {
+        position: absolute;
+        content: attr(data-text); /* Prints the value of the attribute */
+        top: 100%;
+        left: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition: top .25s ease-in-out;
+        z-index: -1;
+        -webkit-textstroke-width: 0px;
+      }
+    &:hover:before { 
+        top: 3px;
+        opacity: 100%;
+        -webkit-text-fill-color: red; /* Will override color (regardless of order) */
+    }
 }
 
 .tab {

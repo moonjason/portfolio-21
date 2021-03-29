@@ -13,7 +13,7 @@ function Projects() {
           <div className="tabs">
               <div className="tab">
                 <input type="radio" id="rd1" name="rd"/>
-                <label className="tab-label" for="rd1">E.C.H.O.</label>
+                <label className="tab-label" data-text="E.C.H.O." htmlFor="rd1">E.C.H.O.</label>
                 <div className="tab-content">
                   <img src="https://via.placeholder.com/150" alt="project"/>
                   <div className="tab-text">
@@ -23,7 +23,7 @@ function Projects() {
               </div>
               <div className="tab">
                 <input type="radio" id="rd2" name="rd"/>
-                <label className="tab-label" for="rd2">Spotify Wrapped 2020</label>
+                <label className="tab-label" data-text="Spotify Wrapped 2020" htmlFor="rd2">Spotify Wrapped 2020</label>
                 <div className="tab-content">
                   <img src="https://via.placeholder.com/150" alt="project"/>
                   <div className="tab-text">
@@ -33,7 +33,7 @@ function Projects() {
               </div>
               <div className="tab">
                 <input type="radio" id="rd3" name="rd"/>
-                <label className="tab-label" for="rd3">Promo Cards by Spotify</label>
+                <label className="tab-label" htmlFor="rd3">Promo Cards by Spotify</label>
                 <div className="tab-content">
                   <img src="https://via.placeholder.com/150" alt="project"/>
                   <div className="tab-text">
@@ -43,7 +43,7 @@ function Projects() {
               </div>
               <div className="tab">
                 <input type="radio" id="rd4" name="rd"/>
-                <label className="tab-label" for="rd4">Sign for Jimmie</label>
+                <label className="tab-label" htmlFor="rd4">Sign for Jimmie</label>
                 <div className="tab-content">
                   <img src="https://via.placeholder.com/150" alt="project"/>
                   <div className="tab-text">
@@ -53,7 +53,7 @@ function Projects() {
               </div>
               <div className="tab">
                 <input type="radio" id="rd5" name="rd"/>
-                <label className="tab-label" for="rd5">Trolli Deliciously Dark Escape</label>
+                <label className="tab-label" htmlFor="rd5">Trolli Deliciously Dark Escape</label>
                 <div className="tab-content">
                   <img src="https://via.placeholder.com/150" alt="project"/>
                   <div className="tab-text">

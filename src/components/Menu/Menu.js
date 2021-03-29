@@ -22,7 +22,7 @@ function Menu() {
         let route;
         switch(section) {
           case "About":
-            route = '/about'
+            route = '/'
             break;
           case "Projects":
             route = '/projects'
@@ -33,7 +33,7 @@ function Menu() {
           default:
             route = '/contact'
         }
-        return <NavLink activeClassName="nav-filled" className="link nav-fill"to={route} style={{ textDecoration: 'inherit'}}>
+        return <NavLink key={`link-${i}`}activeClassName="nav-filled" className="link nav-fill" exact to={route} style={{ textDecoration: 'inherit'}}>
                   <span onClick={e => handleEvent(e)} onMouseOut={(e)=> handleEvent(e)} onMouseOver={(e)=> handleEvent(e)}>{section}</span>
                 </NavLink> 
         // return  <li className="nav-fill" style={style} key={`menu-${i}`}>
@@ -68,7 +68,7 @@ function Menu() {
     return (
       <div className="nav-container">
         <h1 className="header slide-top">Jason Moon // Software Dev</h1>
-        <ul className="nav-list">
+        <ul className="nav-list slide-top">
           {setContent()}
         </ul>
       </div>

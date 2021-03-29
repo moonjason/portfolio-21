@@ -19,8 +19,8 @@ function App() {
         <TransitionGroup>
           <CSSTransition key={location.key} timeout={50}>
               <Switch location={location}>git 
-                <Route exact path={['/', '/about']} render={() => <About />} />
-                <Route exact path={['/projects']} render={() => <Projects />} />
+                <Route exact path={'/'} render={() => <About />} />
+                <Route exact path={'/projects'} render={() => <Projects />} />
               </Switch>
           </CSSTransition>
         </TransitionGroup>
