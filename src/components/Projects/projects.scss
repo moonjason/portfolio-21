@@ -57,6 +57,9 @@ input {
     }
 }
 
+.tab-img { 
+    max-width: 500px;
+}
 
 input:checked {
     + .tab-label {

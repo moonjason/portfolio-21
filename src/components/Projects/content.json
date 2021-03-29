@@ -3,38 +3,54 @@
         {
             "name": "E.C.H.O.",
             "color": "#FFFFB",
-            "description": "",
-            "img": ""
+            "description": "This project was tough dawg",
+            "tech": "JavaScript, Node, AWS, Google Cloud Platform, HTML, CSS",
+            "link": "",
+            "code": "",
+            "img": "./images/projects/echo.png"
         },
         {
-            "name": "E.C.H.O.",
+            "name": "Spotify Wrapped 2020",
             "color": "#FFFFB",
-            "description": "",
-            "img": ""
+            "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, facilis.",
+            "link": "",
+            "code": "",
+            "img": "./images/projects/wrapped.png"
         },
         {
-            "name": "E.C.H.O.",
+            "name": "Promo Cards by Spotify",
             "color": "#FFFFB",
-            "description": "",
-            "img": ""
+            "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, facilis.",            
+            "link": "",
+            "code": "",
+            "img": "./images/projects/promo-cards.png"        
         },
         {
-            "name": "E.C.H.O.",
+            "name": "Sign for Jimmie",
             "color": "#FFFFB",
-            "description": "",
-            "img": ""
+            "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, facilis.",            
+            "link": "",
+            "code": "",
+            "img": "./images/projects/signforjimmie.jpg"        
         },
         {
-            "name": "E.C.H.O.",
+            "name": "Deliciously Dark Escape",
             "color": "#FFFFB",
-            "description": "",
-            "img": ""
-        },
+            "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, facilis.",            
+            "link": "",
+            "code": "",
+            "img": "./images/projects/trolli-dde.png"        
+        }
+    ],
+    "personal":  [
         {
-            "name": "E.C.H.O.",
+            "name": "GotNext",
             "color": "#FFFFB",
-            "description": "",
-            "img": ""
+            "description": "This project was tough dawg",
+            "tech": "JavaScript, React, Node, Styled-Components, Firebase, Google Cloud Platform, HTML, CSS",
+            "link": "",
+            "code": "",
+            "img": "./images/projects/echo.png"
         }
     ]
 }

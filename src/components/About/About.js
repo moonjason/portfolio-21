@@ -8,7 +8,7 @@ function About() {
           <div className="about fade-in"> 
             <div className="column">
               <div className="photo">
-                <img src='./images/me-1.jpg' alt="placeholder"/>
+                <img className="photo-jason" src='./images/me-1.jpg' alt="placeholder"/>
               </div>
             </div>
             <div className="column">
