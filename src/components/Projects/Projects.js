@@ -10,9 +10,13 @@ function Projects() {
                   <label className="tab-label" data-text={project.name} htmlFor={`rd${i+1}`}>{project.name} </label>
                   <div className="tab-content">
                     <img className="tab-img" src={project.img} alt="project"/>
-                    <div className="tab-text">
-                      {project.description}
-                    </div>
+                      {
+                        project.description.map(desc => {
+                          return <div className="tab-text">
+                                    {desc}
+                                  </div>
+                        })
+                      }
                   </div>
                 </div>
       })

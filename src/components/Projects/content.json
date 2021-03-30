@@ -3,42 +3,50 @@
         {
             "name": "E.C.H.O.",
             "color": "#FFFFB",
-            "description": "This project was tough dawg",
+            "description": [
+                "E.C.H.O. ( Enhanced Cognitive Human Ops ) is a Web/VR experience where you play a series of missions to measure your cognitive skills.",
+                ""
+             ],
             "tech": "JavaScript, Node, AWS, Google Cloud Platform, HTML, CSS",
-            "link": "",
+            "link": "https://airforceecho.com",
             "code": "",
+            "news": "",
             "img": "./images/projects/echo.png"
         },
         {
             "name": "Spotify Wrapped 2020",
             "color": "#FFFFB",
-            "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, facilis.",
+            "description": [],
             "link": "",
             "code": "",
+            "news": "https://artists.spotify.com/blog/your-2020-wrapped-is-here",
             "img": "./images/projects/wrapped.png"
         },
         {
             "name": "Promo Cards by Spotify",
             "color": "#FFFFB",
-            "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, facilis.",            
-            "link": "",
+            "description": [],            
+            "link": "https://promocards.by.spotify.com",
             "code": "",
+            "news": "https://artists.spotify.com/blog/introducing-promo-cards",
             "img": "./images/projects/promo-cards.png"        
         },
         {
             "name": "Sign for Jimmie",
             "color": "#FFFFB",
-            "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, facilis.",            
+            "description": [],            
             "link": "",
             "code": "",
+            "news": "http://www.hendrickmotorsports.com/news/articles/108388/sign-for-jimmie-ally-chevrolet-unveiled-for-martinsville",
             "img": "./images/projects/signforjimmie.jpg"        
         },
         {
             "name": "Deliciously Dark Escape",
             "color": "#FFFFB",
-            "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, facilis.",            
-            "link": "",
+            "description": [],            
+            "link": "https://trollideliciouslydarkescape.com/awards",
             "code": "",
+            "news": "",
             "img": "./images/projects/trolli-dde.png"        
         }
     ],
@@ -46,11 +54,22 @@
         {
             "name": "GotNext",
             "color": "#FFFFB",
-            "description": "This project was tough dawg",
+            "description": [],
             "tech": "JavaScript, React, Node, Styled-Components, Firebase, Google Cloud Platform, HTML, CSS",
-            "link": "",
-            "code": "",
-            "img": "./images/projects/echo.png"
+            "link": "http://gotnext-app.herokuapp.com/",
+            "code": "https://github.com/moonjason/GotNext",
+            "news": "",
+            "img": "./images/personal/gotnext.png"
+        },
+        {
+            "name": "Call of Duty: JavaScript",
+            "color": "#FFFFB",
+            "description": [],
+            "tech": "JavaScript, HTML, CSS, jQuery",
+            "link": "https://moonjason.github.io/fpsgame-callofduty-javascript/",
+            "code": "https://github.com/moonjason/fpsgame-callofduty-javascript",
+            "news": "",
+            "img": "./images/personal/cod.png"
         }
     ]
 }
