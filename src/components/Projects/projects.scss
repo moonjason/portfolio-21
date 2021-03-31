@@ -102,7 +102,7 @@ input:checked {
     }
 
     ~ .tab-content  {
-        opacity: 100%;
+        opacity: 1;
         display: block;
         max-height: 100vh;
         padding: 1em;
@@ -125,7 +125,7 @@ input:checked {
     100% {
         -webkit-transform: translateX(100px);
         transform: translateX(100px);
-        opacity: 100;
+        opacity: 1;
     }
 }
 
@@ -138,7 +138,7 @@ input:checked {
     100% {
         -webkit-transform: translateX(100px);
         transform: translateX(100px);
-        opacity: 100;
+        opacity: 1;
     }
 }
 
@@ -156,7 +156,7 @@ input:checked {
     }
     input:checked {
         ~ .tab-content  {
-            opacity: 100%;
+            opacity: 1;
             display: block;
             max-height: 115vh;
             padding: 1em;
@@ -172,7 +172,7 @@ input:checked {
         100% {
             -webkit-transform: translateX(250px);
             transform: translateX(250px);
-            opacity: 100;
+            opacity: 1;
         }
     }
 
@@ -185,7 +185,7 @@ input:checked {
         100% {
             -webkit-transform: translateX(250px);
             transform: translateX(250px);
-            opacity: 100;
+            opacity: 1;
 
         }
     }
@@ -211,7 +211,7 @@ input:checked {
         100% {
             -webkit-transform: translateX(360px);
             transform: translateX(360px);
-            opacity: 100;
+            opacity: 1;
         }
     }
     @keyframes slide-right {
@@ -223,7 +223,7 @@ input:checked {
         100% {
             -webkit-transform: translateX(360px);
             transform: translateX(360px);
-            opacity: 100;
+            opacity: 1;
 
         }
     }
@@ -246,7 +246,7 @@ input:checked {
         100% {
             -webkit-transform: translateX(275px);
             transform: translateX(275px);
-            opacity: 100;
+            opacity: 1;
         }
     }
     
@@ -259,7 +259,7 @@ input:checked {
         100% {
             -webkit-transform: translateX(275px);
             transform: translateX(275px);
-            opacity: 100;
+            opacity: 1;
         }
     }
 }
@@ -278,7 +278,7 @@ input:checked {
         100% {
             -webkit-transform: translateX(100px);
             transform: translateX(100px);
-            opacity: 100;
+            opacity: 1;
         }
     }
     
@@ -291,7 +291,7 @@ input:checked {
         100% {
             -webkit-transform: translateX(100px);
             transform: translateX(100px);
-            opacity: 100;
+            opacity: 1;
         }
     }
 }
