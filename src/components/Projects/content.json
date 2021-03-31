@@ -3,10 +3,18 @@
         {
             "name": "E.C.H.O.",
             "color": "#FFFFB",
-            "description": [
-                "E.C.H.O. ( Enhanced Cognitive Human Ops ) is a Web/VR experience where you play a series of missions to measure your cognitive skills.",
-                ""
-             ],
+            "company": "Active Theory",
+            "description":  {
+                "intro": "E.C.H.O. ( Enhanced Cognitive Human Ops ) is a Web/VR experience where you play a series of missions to measure your cognitive skills.",
+                "summary": "This was one of my biggest projects that I worked on with Active Theory and am grateful for the opportunity. There was a ton that was learned from this project!"
+            },
+            "contributions": [
+                "Lead the backend side of the project using AWS Services",
+                "Built leaderboard feature to display game stats with multiple versions for overall, monthly, daily, and device categories",
+                "Set up authorization flow for users to save their previous scores and compete on leaderboard",
+                "Cheat detection set up using web tokens, user event tracking, and privatizing code",
+                "Contributed to internal library for quick starting AWS Services"
+            ],
             "tech": "JavaScript, Node, AWS, Google Cloud Platform, HTML, CSS",
             "link": "https://airforceecho.com",
             "code": "",
@@ -16,7 +24,18 @@
         {
             "name": "Spotify Wrapped 2020",
             "color": "#FFFFB",
-            "description": [],
+            "company": "Active Theory",
+            "description":  {
+                "intro": "Spotify Wrapped 2020 is a customized Web/Mobile experience where users are able to go through stories and view their listening statistics of 2020. This year, the studio handled three different experiences being the artists, podcasters, and non-user sites.",
+                "summary": "I've always been a fan of the annual Spotify Wrapped projects and it was awesome to be apart of developing one! Loved the exposure in working with Spotify's teams and seeing artists around the world share their experience."
+            },
+            "contributions": [
+                "Set up scripts and models handle artist/podcast data to correspond to each view",
+                "Mapped and set thresholds for artist and podcaster data to construct a story with accurate statistics",
+                "Built out share functionality to work across all three experiences",
+                "Collaborated with Spotify teams to develop APIs, set up git-based content management through Smartling for support up to 26 languages"
+            ],
+            "tech": " Javascript, Node, Express, Smartling, Google Cloud Platform",
             "link": "",
             "code": "",
             "news": "https://artists.spotify.com/blog/your-2020-wrapped-is-here",
@@ -25,7 +44,18 @@
         {
             "name": "Promo Cards by Spotify",
             "color": "#FFFFB",
-            "description": [],            
+            "company": "Active Theory",
+            "description":  {
+                "intro": "Promo Cards is an interactive tool for content creators on the Spotify platform. Artists are able to generate customizable graphics for a song, episode, aritst, show, or playlist and share it with their fans.",
+                "summary": "This is one of my favorite projects because of the impact it had for creators with smaller followings. Within 24 hours of launch, over 12,000 cards were generated."
+            },           
+            "contributions": [
+                "Lead the backend side of the project using proprietary Node.js framework",
+                "Used Spotify API to set up incremental search functionality and mapped data to display a wide range of results",
+                "Localized for English, German, Porteguese, French, and Spanish by organizing and deploying a custom CMS",
+                "Dynamic sharing with url linking to the item’s Spotify page"
+            ], 
+            "tech": "Javascript, Node, Express, Firebase, Google Cloud Platform, Spotify API",
             "link": "https://promocards.by.spotify.com",
             "code": "",
             "news": "https://artists.spotify.com/blog/introducing-promo-cards",
@@ -34,7 +64,17 @@
         {
             "name": "Sign for Jimmie",
             "color": "#FFFFB",
-            "description": [],            
+            "company": "Active Theory",
+            "description":  {
+                "intro": "In 2020, 5x NASCAR Champion Jimmie Johnson had his final race before retiring from the sport. 'Sign for Jimmie' was a campaign and web experience fans where the first 10,000 entrants could sign their signature on Jimmie's car.",
+                "summary": "I love sports and being a part of this project was cool because it helped create a bridge between a star athlete and his loyal fans. I learned a lot in this project as it was one of the first at the company. The car wrap really turned out nicely and the picture above is the actual car!"
+            },       
+            "contributions": [
+                "Set up export scripts to send email list and signature assets to client for car wrap preparation",
+                "Databases, custom CMS, and serverless functions set up for signature submissions",
+                "Added a moderation feature to CMS to filter submissions after having passed Google Vision scan"
+            ],     
+            "tech": "Javascript, Node, Firebase, Google Cloud Platform",
             "link": "",
             "code": "",
             "news": "http://www.hendrickmotorsports.com/news/articles/108388/sign-for-jimmie-ally-chevrolet-unveiled-for-martinsville",
@@ -43,7 +83,18 @@
         {
             "name": "Deliciously Dark Escape",
             "color": "#FFFFB",
-            "description": [],            
+            "company": "Active Theory",
+            "description":  {
+                "intro": "Deliciously Dark Escape is a multi-level web-based platform game that could help you win prizes from Trolli. Trolli products were used to boost sweepstakes entries.",
+                "summary": "I thought the project turned out awesome. It was a great experience to work on this project because almost all the features were a learning experience for me."
+            },      
+            "contributions": [
+                "Lead the backend side of the project using Google Cloud Platform",
+                "Token system to maximize play time to one hour",
+                "Used Firebase Cloud Functions in conjunction with Firebase Hosting",
+                "Set up Merkle API for user registration, sweepstakes entries, and to determine prize winner"
+            ],      
+            "tech": "Javascript, Node, Firebase, Google Cloud Platform",
             "link": "https://trollideliciouslydarkescape.com/awards",
             "code": "",
             "news": "",
@@ -54,8 +105,18 @@
         {
             "name": "GotNext",
             "color": "#FFFFB",
-            "description": [],
-            "tech": "JavaScript, React, Node, Styled-Components, Firebase, Google Cloud Platform, HTML, CSS",
+            "company": "Personal",
+            "description":  {
+                "intro": "My final project at coding school was GotNext, a react app where users can search for parks and find people to play sports with. This was inspired by my experience in not having a full group of people to play basketball with when I hit the parks as a kid.",
+                "summary": "This project really propelled my development skills and glad on how it turned it with just two weeks of dev time!"
+            },
+            "contributions": [
+                "Learned and implemented React Hooks for data-subscriptions, form management, and styling",
+                "Account creation flow using Firebase Auth along with React Router to create user profile",
+                "Yelp and Mapbox APIs to supply App's park data",
+                "Used Styled-Components for functional styling"
+            ],
+            "tech": "JavaScript, React, Node, Styled-Components, Firebase, Google Cloud Platform, HTML, CSS, Mapbox API, Yelp API",
             "link": "http://gotnext-app.herokuapp.com/",
             "code": "https://github.com/moonjason/GotNext",
             "news": "",
@@ -64,7 +125,15 @@
         {
             "name": "Call of Duty: JavaScript",
             "color": "#FFFFB",
-            "description": [],
+            "description":  {
+                "intro": "Call of Duty: JavaScript was my first ever project on the web. It's a 'first person shooter' with a basic scoring system and some cool animations.",
+                "summary": "I love looking back at this project because it helsp me remember how far I've come as a developer. Sometimes I impress myself that I was able to make something like this as my first project!"
+            },
+            "contributions": [
+                "Basic web development skills put into play",
+                "Hosted on github pages",
+                "Used external libraries - jQuery and Animate.css"
+            ],
             "tech": "JavaScript, HTML, CSS, jQuery",
             "link": "https://moonjason.github.io/fpsgame-callofduty-javascript/",
             "code": "https://github.com/moonjason/fpsgame-callofduty-javascript",
