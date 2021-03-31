@@ -49,6 +49,11 @@ function Projects() {
                           }
                       </ul>
                       <br/>
+                      <div className="project-links">
+                        { project.link ? <a className="project-link" href={project.link} rel="noreferrer" target="_blank">Live Site</a>: ''}
+                        { project.code? <a className="project-link" href={project.code} rel="noreferrer" target="_blank">Code</a>: ''}
+                        { project.news ? <a className="project-link" href={project.news} rel="noreferrer" target="_blank">Article</a>: ''}
+                      </div>
                       <br/>
                       <p className="tech">Tech:</p>
                       {project.tech}
@@ -60,7 +65,6 @@ function Projects() {
 
     const setPersonal = () => { 
       let delay = 0.1 + (0.115 * data.projects.length)
-      console.log(data)
       return  data.personal.map( (project, i) => {
         let style = { 
           animationDelay: `${delay}s`
@@ -86,6 +90,11 @@ function Projects() {
                             }
                         </ul>
                         <br/>
+                        <div className="project-links">
+                          { project.link ? <a className="project-link-personal" href={project.link} rel="noreferrer" target="_blank">Live Site</a>: ''}
+                          { project.code? <a className="project-link-personal" href={project.code} rel="noreferrer" target="_blank">Code</a>: ''}
+                          { project.news ? <a className="project-link-personal" href={project.news} rel="noreferrer" target="_blank">Article</a>: ''}
+                        </div>
                         <br/>
                         <p className="tech">Tech:</p>
                         {project.tech}

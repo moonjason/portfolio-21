@@ -56,7 +56,7 @@
                 "Dynamic sharing with url linking to the item’s Spotify page"
             ], 
             "tech": "Javascript, Node, Express, Firebase, Google Cloud Platform, Spotify API",
-            "link": "https://promocards.by.spotify.com",
+            "link": "https://promocards.byspotify.com",
             "code": "",
             "news": "https://artists.spotify.com/blog/introducing-promo-cards",
             "img": "./images/projects/promo-cards.png"        
