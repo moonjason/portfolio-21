@@ -30,7 +30,7 @@
                 "summary": "I've always been a fan of the annual Spotify Wrapped projects and it was awesome to be apart of developing one! Loved the exposure in working with Spotify's teams and seeing artists around the world share their experience."
             },
             "contributions": [
-                "Set up scripts and models handle artist/podcast data to correspond to each view",
+                "Set up scripts and models to handle artist/podcast data to correspond to each view",
                 "Mapped and set thresholds for artist and podcaster data to construct a story with accurate statistics",
                 "Built out share functionality to work across all three experiences",
                 "Collaborated with Spotify teams to develop APIs, set up git-based content management through Smartling for support up to 26 languages"
@@ -74,7 +74,7 @@
                 "Databases, custom CMS, and serverless functions set up for signature submissions",
                 "Added a moderation feature to CMS to filter submissions after having passed Google Vision scan"
             ],     
-            "tech": "Javascript, Node, Firebase, Google Cloud Platform",
+            "tech": "Javascript, Node, Firebase, Google Cloud Platform, HTML, CSS",
             "link": "",
             "code": "",
             "news": "http://www.hendrickmotorsports.com/news/articles/108388/sign-for-jimmie-ally-chevrolet-unveiled-for-martinsville",
