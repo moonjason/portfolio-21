@@ -4,21 +4,11 @@ import './menu.scss'
 
 function Menu() {
   let [ over, setOver ] = useState({ over: false, color: ''});
-  let [ current, setCurrent] = useState('About')
     const content = ['About', 'Projects', 'Resume', 'Contact']
     
-    let bgStyle = {
-      backgroundColor: over.color
-    }
 
     function setContent() {
-      let delay = 0.1
       return content.map((section, i) => {
-        let style = { 
-          animationDelay: `${delay}s`
-        }
-        delay += 0.115
-
         let route;
         switch(section) {
           case "About":
@@ -36,11 +26,6 @@ function Menu() {
         return <NavLink key={`link-${i}`}activeClassName="nav-filled" className="link nav-fill" exact to={route} style={{ textDecoration: 'inherit'}}>
                   <span onClick={e => handleEvent(e)} onMouseOut={(e)=> handleEvent(e)} onMouseOver={(e)=> handleEvent(e)}>{section}</span>
                 </NavLink> 
-        // return  <li className="nav-fill" style={style} key={`menu-${i}`}>
-        //           <NavLink activeStyle="" className="link nav-fill"to={route} style={{ color: 'inherit', textDecoration: 'inherit'}}>
-        //             <span onClick={e => handleEvent(e)} onMouseOut={(e)=> handleEvent(e)} onMouseOver={(e)=> handleEvent(e)}>{section}</span>
-        //           </NavLink> 
-        //         </li>
       })
     }
 
@@ -70,6 +55,12 @@ function Menu() {
         <h1 className="header slide-top">Jason Moon // Software Dev</h1>
         <ul className="nav-list slide-top">
           {setContent()}
+          <a target="_blank" rel="noreferrer" href="https://linkedin.com/in/jasonmoon96" className="link nav-fill" style={{ textDecoration: 'inherit'}}>
+            <span>LinkedIn</span>
+          </a> 
+          <a target="_blank" rel="noreferrer" href="https://github.com/moonjason" className="link nav-fill" style={{ textDecoration: 'inherit'}}>
+            <span>Github</span>
+          </a> 
         </ul>
       </div>
     );
