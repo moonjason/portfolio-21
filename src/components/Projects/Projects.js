@@ -52,27 +52,27 @@ function Projects() {
         return  <div className="tab slide-right" style={style}>
                   <input type="radio" id={`rd${index+1}`} name="rd"/>
                   <label className="tab-label tab-label-personal" data-text={project.name} htmlFor={`rd${index+1}`}>{project.name} </label>
-                  <div className="tab-content">
-                    <img className="tab-img" src={project.img} alt="project"/>
-                    <div className="tab-text">
-                      <br/>
-                      {project.description.intro}
-                      <br/>
-                      <br/>
-                      {project.description.summary}
-                      <br/>
-                      <br/>
-                      <ul>
-                          {
-                            project.contributions.map((bullet, i) => <li className="task" key={`task-${i}`}>{bullet}</li>)
-                          }
-                      </ul>
-                      <br/>
-                      <br/>
-                      <p className="tech">Tech:</p>
-                      {project.tech}
+                    <div className="tab-content">
+                      <img className="tab-img" src={project.img} alt="project"/>
+                      <div className="tab-text">
+                        <br/>
+                        {project.description.intro}
+                        <br/>
+                        <br/>
+                        {project.description.summary}
+                        <br/>
+                        <br/>
+                        <ul>
+                            {
+                              project.contributions.map((bullet, i) => <li className="task" key={`task-${i}`}>{bullet}</li>)
+                            }
+                        </ul>
+                        <br/>
+                        <br/>
+                        <p className="tech">Tech:</p>
+                        {project.tech}
+                      </div>
                     </div>
-                  </div>
                 </div>
       })
     }

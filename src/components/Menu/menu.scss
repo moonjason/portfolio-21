@@ -132,6 +132,18 @@
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+    .nav-list { 
+        width: 100px;
+        flex-direction: column;
+    }
+    .nav-list a { 
+        margin: 7px 0;
+    }
+    .nav-fill {
+        text-align: center;
+        padding: 0 
+    }
+    
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
