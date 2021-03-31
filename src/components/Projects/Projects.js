@@ -4,8 +4,13 @@ import { projects, personal } from './content.json';
 function Projects() {
 
     const setContent = () => { 
+      let delay = 0.1
       return  projects.map( (project, i) => {
-        return  <div className="tab">
+        let style = { 
+          animationDelay: `${delay}s`
+        }
+        delay += 0.115
+        return  <div className="tab slide-right" style={style}>
                   <input type="radio" id={`rd${i+1}`} name="rd"/>
                   <label className="tab-label" data-text={project.name} htmlFor={`rd${i+1}`}>{project.name} </label>
                   <div className="tab-content">
@@ -37,9 +42,14 @@ function Projects() {
     }
 
     const setPersonal = () => { 
+      let delay = 0.1 + (0.115 * projects.length)
       return  personal.map( (project, i) => {
+        let style = { 
+          animationDelay: `${delay}s`
+        }
+        delay += 0.115
         let index = projects.length + i;
-        return  <div className="tab">
+        return  <div className="tab slide-right" style={style}>
                   <input type="radio" id={`rd${index+1}`} name="rd"/>
                   <label className="tab-label tab-label-personal" data-text={project.name} htmlFor={`rd${index+1}`}>{project.name} </label>
                   <div className="tab-content">

@@ -4,7 +4,7 @@ import './menu.scss'
 
 function Menu() {
   let [ over, setOver ] = useState({ over: false, color: ''});
-    const content = ['About', 'Projects', 'Resume', 'Contact']
+    const content = ['About', 'Projects']
     
 
     function setContent() {
@@ -17,11 +17,8 @@ function Menu() {
           case "Projects":
             route = '/projects'
             break;
-          case "Resume":
-            route = '/resume'
-            break;
-          default:
-            route = '/contact'
+          default: 
+            route = '/'
         }
         return <NavLink key={`link-${i}`}activeClassName="nav-filled" className="link nav-fill" exact to={route} style={{ textDecoration: 'inherit'}}>
                   <span onClick={e => handleEvent(e)} onMouseOut={(e)=> handleEvent(e)} onMouseOver={(e)=> handleEvent(e)}>{section}</span>
@@ -55,6 +52,12 @@ function Menu() {
         <h1 className="header slide-top">Jason Moon // Software Dev</h1>
         <ul className="nav-list slide-top">
           {setContent()}
+          <a target="_blank" rel="noreferrer" href="#" className="link nav-fill" style={{ textDecoration: 'inherit'}}>
+            <span>Resume</span>
+          </a> 
+          <a href="mailto: jasonmoonjm@gmail.com" className="link nav-fill" style={{ textDecoration: 'inherit'}}>
+            <span>Contact</span>
+          </a> 
           <a target="_blank" rel="noreferrer" href="https://linkedin.com/in/jasonmoon96" className="link nav-fill" style={{ textDecoration: 'inherit'}}>
             <span>LinkedIn</span>
           </a> 
