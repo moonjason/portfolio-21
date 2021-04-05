@@ -13,7 +13,7 @@ import Projects from './components/Projects/Projects';
 
 
 const routes = [
-  { path: '/', name: 'About', Component: About },
+  { path: '/', name: 'Home', Component: About },
   { path: '/projects', name: 'Projects', Component: Projects },
 ]
 
@@ -24,10 +24,10 @@ function App() {
 
   useEffect(()=> {
     async function redirect404() {
-        if (!paths.includes(window.location.href)) return history.push('/')
+        if (!paths.includes(window.location.pathname)) return history.push('/')
     }
     redirect404();
-  }, [history])
+  })
 
   return (
     <div className="App">
