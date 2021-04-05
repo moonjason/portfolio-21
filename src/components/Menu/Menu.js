@@ -52,7 +52,7 @@ function Menu() {
         <h1 className="header slide-top">Jason Moon // Software Dev</h1>
         <ul className="nav-list slide-top">
           {setContent()}
-          <a target="_blank" rel="noreferrer" href="https://storage.googleapis.com/portfolio-36df2.appspot.com/resume.pdf" className="link nav-fill" style={{ textDecoration: 'inherit'}}>
+          <a target="_blank" rel="noreferrer" href={`https://storage.googleapis.com/portfolio-36df2.appspot.com/resume.pdf?${Date.now()}`} className="link nav-fill" style={{ textDecoration: 'inherit'}}>
             <span>Resume</span>
           </a> 
           <a href="mailto: jasonmoonjm@gmail.com" className="link nav-fill" style={{ textDecoration: 'inherit'}}>
