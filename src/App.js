@@ -1,4 +1,6 @@
-import { Route } from 'react-router-dom';
+import { Route, useHistory } from 'react-router-dom';
+import { useEffect } from 'react'
+
 import { 
   CSSTransition,
 } from 'react-transition-group';
@@ -15,8 +17,17 @@ const routes = [
   { path: '/projects', name: 'Projects', Component: Projects },
 ]
 
+const paths = ['/', '/projects']
 
 function App() {
+  let history = useHistory();
+
+  useEffect(()=> {
+    async function redirect404() {
+        if (!paths.includes(window.location.href)) return history.push('/')
+    }
+    redirect404();
+  }, [history])
 
   return (
     <div className="App">
@@ -24,7 +35,7 @@ function App() {
       {/* <Route render={({location}) => (
         <TransitionGroup>
           <CSSTransition key={location.key} timeout={50}>
-              <Switch location={location}>git 
+              <Switch location={location}>
                 <Route exact path={'/'} render={() => <About />} />
                 <Route exact path={'/projects'} render={() => <Projects />} />
               </Switch>
@@ -32,7 +43,7 @@ function App() {
         </TransitionGroup>
       )} /> */}
       {routes.map(({ path, Component }) => (
-            <Route key={path} exact path={path}>
+            <Route key={path} exact={path !=='*'} path={path}>
               {({ match }) => (
                 <CSSTransition
                   in={match != null}
