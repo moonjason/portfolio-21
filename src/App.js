@@ -10,14 +10,16 @@ import './App.scss';
 import About from './components/About/About';
 import Menu from './components/Menu/Menu';
 import Projects from './components/Projects/Projects';
+import Contact from './components/Contact/Contact';
 
 
 const routes = [
   { path: '/', name: 'Home', Component: About },
   { path: '/projects', name: 'Projects', Component: Projects },
+  { path: '/contact', name: 'Contact', Component: Contact },
 ]
 
-const paths = ['/', '/projects']
+const paths = ['/', '/projects', '/contact']
 
 function App() {
   let history = useHistory();
